@@ -28,9 +28,39 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/material-design-icons/iconfont/material-icons.css",
+              "node_modules/bootstrap/dist/css/bootstrap.css",
+              "node_modules/material-dashboard/assets/css/material-dashboard.css",
+              "node_modules/material-dashboard/assets/css/perfect-scrollbar.css",
+              "node_modules/@ng-select/ng-select/themes/material.theme.css",
+              "node_modules/datatables.net-bs4/css/dataTables.bootstrap4.css",
+              "node_modules/datatables.net-buttons-bs4/css/buttons.bootstrap4.css",
+              "node_modules/datatables.net-colreorder-bs4/css/colReorder.bootstrap4.css",
+              "node_modules/datatables.net-responsive-bs4/css/responsive.bootstrap4.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/material-dashboard/assets/js/core/jquery.min.js",
+              "node_modules/material-dashboard/assets/js/core/popper.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.js",
+              "node_modules/material-dashboard/assets/js/core/bootstrap-material-design.min.js",
+              "node_modules/material-dashboard/assets/js/plugins/perfect-scrollbar.jquery.min.js",
+              "node_modules/datatables.net/js/jquery.dataTables.js",
+              "node_modules/jszip/dist/jszip.js",
+              "node_modules/datatables.net-bs4/js/dataTables.bootstrap4.js",
+              "node_modules/datatables.net-buttons/js/dataTables.buttons.js",
+              "node_modules/datatables.net-colreorder/js/dataTables.colReorder.js",
+              "node_modules/datatables.net-responsive/js/dataTables.responsive.js",
+
+              "node_modules/datatables.net-buttons-bs4/js/buttons.bootstrap4.js",
+              "node_modules/datatables.net-colreorder-bs4/js/colReorder.bootstrap4.js",
+              "node_modules/datatables.net-responsive-bs4/js/responsive.bootstrap4.js",
+
+              "node_modules/material-dashboard/assets/js/plugins/bootstrap-notify.js",
+              "src/assets/js/perfect-scrollbar-custom.js",
+              "node_modules/material-dashboard/assets/js/material-dashboard.js",
+              "src/assets/js/upload-input-custom.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -91,9 +121,39 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/material-design-icons/iconfont/material-icons.css",
+              "node_modules/bootstrap/dist/css/bootstrap.css",
+              "node_modules/material-dashboard/assets/css/material-dashboard.css",
+              "node_modules/material-dashboard/assets/css/perfect-scrollbar.css",
+              "node_modules/@ng-select/ng-select/themes/material.theme.css",
+              "node_modules/datatables.net-bs4/css/dataTables.bootstrap4.css",
+              "node_modules/datatables.net-buttons-bs4/css/buttons.bootstrap4.css",
+              "node_modules/datatables.net-colreorder-bs4/css/colReorder.bootstrap4.css",
+              "node_modules/datatables.net-responsive-bs4/css/responsive.bootstrap4.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/material-dashboard/assets/js/core/jquery.min.js",
+              "node_modules/material-dashboard/assets/js/core/popper.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.js",
+              "node_modules/material-dashboard/assets/js/core/bootstrap-material-design.min.js",
+              "node_modules/material-dashboard/assets/js/plugins/perfect-scrollbar.jquery.min.js",
+              "node_modules/datatables.net/js/jquery.dataTables.js",
+              "node_modules/jszip/dist/jszip.js",
+              "node_modules/datatables.net-bs4/js/dataTables.bootstrap4.js",
+              "node_modules/datatables.net-buttons/js/dataTables.buttons.js",
+              "node_modules/datatables.net-colreorder/js/dataTables.colReorder.js",
+              "node_modules/datatables.net-responsive/js/dataTables.responsive.js",
+
+              "node_modules/datatables.net-buttons-bs4/js/buttons.bootstrap4.js",
+              "node_modules/datatables.net-colreorder-bs4/js/colReorder.bootstrap4.js",
+              "node_modules/datatables.net-responsive-bs4/js/responsive.bootstrap4.js",
+
+              "node_modules/material-dashboard/assets/js/plugins/bootstrap-notify.js",
+              "src/assets/js/perfect-scrollbar-custom.js",
+              "node_modules/material-dashboard/assets/js/material-dashboard.js",
+              "src/assets/js/upload-input-custom.js"
+            ]
           }
         },
         "lint": {
@@ -124,5 +184,8 @@
       }
     }
   },
-  "defaultProject": "TRMaterialUI"
+  "defaultProject": "TRMaterialUI",
+  "cli": {
+    "analytics": "aaebb2a8-c8bf-4a8f-9334-4ac84f85120f"
+  }
 }

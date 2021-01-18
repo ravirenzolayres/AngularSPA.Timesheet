@@ -1,0 +1,31 @@
+<div class="card">
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="card-header">
+                <h4> Upload {{title}}</h4>
+            </div>
+            <div class="card-body">
+                <div class="form-group form-file-upload form-file-multiple">
+                    <input type="file" multiple="" class="inputFileHidden" accept=".xlsx" (change)="getFileName($event)">
+                    <div class="input-group">
+                        <input type="text" class="form-control inputFileVisible" placeholder="Choose Files" multiple (click)="getUploadText()">
+                        <span class="input-group-btn">
+                            <button type="button" class="btn btn-fab btn-round btn-info" (click)="getUploadButton()">
+                                <i class="material-icons">layers</i>
+                            </button>
+                        </span>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="card-footer">
+                <div class="row">
+                    <div class="col-md-12">
+                        <button type="button" class="btn btn-primary btn-round"> Upload {{title}}</button>
+                        <button type="button" class="btn btn-danger btn-round"> Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

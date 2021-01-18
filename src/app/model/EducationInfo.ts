@@ -1,0 +1,27 @@
+export interface EducationInfo {
+     IDNo :number
+     EmployeeId:number, 
+     ESName:string, 
+     HSName:string, 
+     VSName:string, 
+     CSName:string, 
+     PGSName:string, 
+     ESAddress:string, 
+     HSAddress:string, 
+     VSAddress:string, 
+     CSAddress:string, 
+     PGSAddress:string, 
+     ESInclusiveStartYear:string, 
+     HSInclusiveStartYear:string, 
+     VSInclusiveStartYear:string, 
+     CSInclusiveStartYear:string, 
+     PGSInclusiveStartYear:string, 
+     ESInclusiveEndYear:string, 
+     HSInclusiveEndYear:string, 
+     VSInclusiveEndYear:string, 
+     CSInclusiveEndYear:string, 
+     PGSInclusiveEndYear:string, 
+     CSCourse:string, 
+     VSCourse:string,
+     PGSCourse:string
+}

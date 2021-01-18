@@ -1,0 +1,46 @@
+<div class="card">
+    <div class="card-header card-header-rose">
+        <div class="card-title">
+            <p class="lead">{{title}} Listing</p>
+        </div>
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-sm-12">
+                <button type="button" class="btn btn-primary"> Create New {{title}}</button>
+            </div>
+        </div>
+
+        <table datatable [dtOptions]="dtOptions" class="table table-striped table-bordered dt-responsive nowrap" width="100%">
+            <thead>
+                <tr>
+                    <th>IDNo</th>
+                    <th>Holiday Code</th>
+                    <th>Holiday Name</th>
+                    <th>Date</th>
+                    <th>Is Fixed</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let holiday of holidays">
+                    <td>{{holiday.IDNo}}</td>
+                    <td>{{holiday.HolidayCode}}</td>
+                    <td>{{holiday.HolidayName}}</td>
+                    <td>{{holiday.Date}}</td>
+                    <td>{{holiday.IsFixed}}</td>
+                    <td>
+                        <div class="dropdown">
+                            <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            </button>
+                              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item">Edit</a>
+                                <a class="dropdown-item">Delete</a>
+                              </div>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

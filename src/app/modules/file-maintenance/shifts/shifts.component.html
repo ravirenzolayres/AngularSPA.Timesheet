@@ -1,0 +1,66 @@
+<div class="card">
+    <div class="card-header card-header-rose">
+        <div class="card-title">
+            <p class="lead">{{title}} Listing</p>
+        </div>
+    </div>
+    <div class="card-body">
+         <div class="row">
+             <div class="col-sm-12">
+                 <button type="button" class="btn btn-primary"> Create New {{title}}</button>
+             </div>
+         </div>
+
+        <table datatable [dtOptions]="dtOptions" class="table bordered row-bordered">
+            <thead>
+                <tr>
+                    <th>IDNo</th>
+                    <th>Shift Code</th>
+                    <th>Shift Name</th>
+                    <th>Shift In</th>
+                    <th>Shift Out</th>
+                    <th>ND1 Shift In</th>
+                    <th>ND1 Shift Out</th>
+                    <th>ND2 Shift In</th>
+                    <th>ND2 Shift Out</th>
+                    <th>ND3 Shift In</th>
+                    <th>ND3 Shift Out</th>
+                    <th>Brk</th>
+                    <th>Hours Work</th>
+                    <th>Grace Period</th>
+                    <th>Is Rest day</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let shift of shifts">
+                    <td>{{shift.IDNo}}</td>
+                    <td>{{shift.ShiftCode}}</td>
+                    <td>{{shift.ShiftName}}</td>
+                    <td>{{shift.ShiftIn}}</td>
+                    <td>{{shift.ShiftOut}}</td>
+                    <td>{{shift.ND1ShiftIn}}</td>
+                    <td>{{shift.ND1ShiftOut}}</td>
+                    <td>{{shift.ND2ShiftIn}}</td>
+                    <td>{{shift.ND2ShiftOut}}</td>
+                    <td>{{shift.ND3ShiftIn}}</td>
+                    <td>{{shift.ND3ShiftOut}}</td>
+                    <td>{{shift.Brk}}</td>
+                    <td>{{shift.HoursWork}}</td>
+                    <td>{{shift.GracePeriod}}</td>
+                    <td>{{shift.IsRestday}}</td>
+                    <td>
+                        <div class="dropdown">
+                            <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            </button>
+                              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item">Edit</a>
+                                <a class="dropdown-item">Delete</a>
+                              </div>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

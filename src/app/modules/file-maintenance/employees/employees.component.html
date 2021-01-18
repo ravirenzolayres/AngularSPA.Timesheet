@@ -1,0 +1,66 @@
+<div class="card">
+        <div class="card-header card-header-rose">
+            <div class="card-title">
+                <p class="lead">{{title}} Listing</p>
+            </div>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-sm-12">
+                    <button type="button" class="btn btn-primary"> Create New {{title}}</button>
+                </div>
+            </div>
+
+            <table datatable [dtOptions]="dtOptions" class="table table-striped table-bordered dt-responsive nowrap" width="100%">
+                <thead>
+                    <tr>
+                        <th>IDNo</th>
+                        <th>EmployeeId</th>
+                        <th>BioId</th>
+                        <th>CompanyId</th>
+                        <th>BranchId</th>
+                        <th>DepartmentId</th>
+                        <th>PositionId</th>
+                        <th>EmployeeTypeId</th>
+                        <th>PersonalInfoId</th>
+                        <th>EducationInfoId</th>
+                        <th>ProfileImg</th>
+                        <th>DefaultShiftCodeId</th>
+                        <th>UserId</th>
+                        <th>DateHired</th>
+                        <th>DateRegularized</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let employee of employees">
+                        <td>{{employee.IDNo}}</td>
+                        <td>{{employee.EmployeeId}}</td>
+                        <td>{{employee.BioId}}</td>
+                        <td>{{employee.CompanyId}}</td>
+                        <td>{{employee.BranchId}}</td>
+                        <td>{{employee.DepartmentId}}</td>
+                        <td>{{employee.PositionId}}</td>
+                        <td>{{employee.EmployeeTypeId}}</td>
+                        <td>{{employee.PersonalInfoId}}</td>
+                        <td>{{employee.EducationInfoId}}</td>
+                        <td>{{employee.ProfileImg}}</td>
+                        <td>{{employee.DefaultShiftCodeId}}</td>
+                        <td>{{employee.UserId}}</td>
+                        <td>{{employee.DateHired}}</td>
+                        <td>{{employee.DateRegularized}}</td>
+                        <td>
+                            <div class="dropdown">
+                                <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                </button>
+                                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item">Edit</a>
+                                    <a class="dropdown-item">Delete</a>
+                                  </div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+</div>

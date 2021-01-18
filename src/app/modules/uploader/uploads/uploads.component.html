@@ -1,0 +1,281 @@
+
+
+<div class="card">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="card-header card-header-rose">
+                <div class="card-title">
+                    <h4> Uploader </h4>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="card card-nav-tabs card-plain">
+                    <div class="card-header card-header-warning">
+                        <!-- colors: "header-primary", "header-info", "header-success", "header-warning", "header-danger" -->
+                        <div class="nav-tabs-navigation">
+                            <div class="nav-tabs-wrapper">
+                                <ul class="nav nav-tabs" data-tabs="tabs">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" href="#companiesTab" data-toggle="tab" (click)="changeName('companies')">Companies</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#branchesTab" data-toggle="tab" (click)="changeName('branches')">Branches</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#departmentsTab" data-toggle="tab" (click)="changeName('departments')">Departments</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#positionsTab" data-toggle="tab" (click)="changeName('positions')">Positions</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#employmentTypesTab" data-toggle="tab" (click)="changeName('employmentTypes')">Employment Types</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#holidayTypesTab" data-toggle="tab" (click)="changeName('holidayTypes')">Holiday Types</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#holidaysTab" data-toggle="tab" (click)="changeName('holidays')">Holidays</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#employeesTab" data-toggle="tab" (click)="changeName('employees')">Employees</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#usersTab" data-toggle="tab" (click)="changeName('users')">Users</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body ">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="companiesTab">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="form-group form-file-upload form-file-multiple">
+                                            <input type="file" id="companiesTabMenu" multiple="" class="inputFileHidden" accept=".xlsx" (change)="getFileName($event)">
+                                            <div class="input-group">
+                                                <input type="text" id="companies" class="form-control inputFileVisible" placeholder="Choose Files" multiple (click)="getUploadText()">
+                                                <span class="input-group-btn">
+                                                    <button type="button" class="btn btn-fab btn-round btn-info" (click)="getUploadButton()">
+                                                        <i class="material-icons">layers</i>
+                                                    </button>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <button type="button" class="btn btn-primary btn-round" [disabled]="isBtnUploadDisabled" (click)="Upload()"> Upload {{title}}</button>
+                                        <button type="button" class="btn btn-danger btn-round" [disabled]="isBtnCancelDisabled" (click)="Cancel()"> Cancel</button>
+                                    </div>
+                                </div>    
+                            </div>
+                            <div class="tab-pane" id="branchesTab">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="form-group form-file-upload form-file-multiple">
+                                            <input type="file" id="branchesTabMenu" multiple="" class="inputFileHidden" accept=".xlsx" (change)="getFileName($event)">
+                                            <div class="input-group">
+                                                <input type="text" id="branches" class="form-control inputFileVisible" placeholder="Choose Files" multiple (click)="getUploadText()">
+                                                <span class="input-group-btn">
+                                                    <button type="button" class="btn btn-fab btn-round btn-info" (click)="getUploadButton()">
+                                                        <i class="material-icons">layers</i>
+                                                    </button>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <button type="button" class="btn btn-primary btn-round" [disabled]="isBtnUploadDisabled" (click)="Upload()"> Upload {{title}}</button>
+                                        <button type="button" class="btn btn-danger btn-round" [disabled]="isBtnCancelDisabled" (click)="Cancel()"> Cancel</button>
+                                    </div>
+                                </div>    
+                            </div>
+
+                            <div class="tab-pane" id="departmentsTab">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="form-group form-file-upload form-file-multiple">
+                                            <input type="file" id="departmentsTabMenu" multiple="" class="inputFileHidden" accept=".xlsx" (change)="getFileName($event)">
+                                            <div class="input-group">
+                                                <input type="text" id="departments" class="form-control inputFileVisible" placeholder="Choose Files" multiple (click)="getUploadText()">
+                                                <span class="input-group-btn">
+                                                    <button type="button" class="btn btn-fab btn-round btn-info" (click)="getUploadButton()">
+                                                        <i class="material-icons">layers</i>
+                                                    </button>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <button type="button" class="btn btn-primary btn-round" [disabled]="isBtnUploadDisabled" (click)="Upload()"> Upload {{title}}</button>
+                                        <button type="button" class="btn btn-danger btn-round" [disabled]="isBtnCancelDisabled" (click)="Cancel()"> Cancel</button>
+                                    </div>
+                                </div> 
+                            </div>
+
+                            <div class="tab-pane" id="positionsTab">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="form-group form-file-upload form-file-multiple">
+                                            <input type="file" id="positionsTabMenu" multiple="" class="inputFileHidden" accept=".xlsx" (change)="getFileName($event)">
+                                            <div class="input-group">
+                                                <input type="text" id="positions" class="form-control inputFileVisible" placeholder="Choose Files" multiple (click)="getUploadText()">
+                                                <span class="input-group-btn">
+                                                    <button type="button" class="btn btn-fab btn-round btn-info" (click)="getUploadButton()">
+                                                        <i class="material-icons">layers</i>
+                                                    </button>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <button type="button" class="btn btn-primary btn-round" [disabled]="isBtnUploadDisabled" (click)="Upload()"> Upload {{title}}</button>
+                                        <button type="button" class="btn btn-danger btn-round" [disabled]="isBtnCancelDisabled" (click)="Cancel()"> Cancel</button>
+                                    </div>
+                                </div> 
+                            </div>
+
+                            <div class="tab-pane" id="employmentTypesTab">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="form-group form-file-upload form-file-multiple">
+                                            <input type="file" id="employmentTypesTabMenu" multiple="" class="inputFileHidden" accept=".xlsx" (change)="getFileName($event)">
+                                            <div class="input-group">
+                                                <input type="text" id="employmentTypes" class="form-control inputFileVisible" placeholder="Choose Files" multiple (click)="getUploadText()">
+                                                <span class="input-group-btn">
+                                                    <button type="button" class="btn btn-fab btn-round btn-info" (click)="getUploadButton()">
+                                                        <i class="material-icons">layers</i>
+                                                    </button>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <button type="button" class="btn btn-primary btn-round" [disabled]="isBtnUploadDisabled" (click)="Upload()"> Upload {{title}}</button>
+                                        <button type="button" class="btn btn-danger btn-round" [disabled]="isBtnCancelDisabled" (click)="Cancel()"> Cancel</button>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="tab-pane" id="holidayTypesTab">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="form-group form-file-upload form-file-multiple">
+                                            <input type="file" id="holidayTypesTabMenu" multiple="" class="inputFileHidden" accept=".xlsx" (change)="getFileName($event)">
+                                            <div class="input-group">
+                                                <input type="text" id="holidayTypes" class="form-control inputFileVisible" placeholder="Choose Files" multiple (click)="getUploadText()">
+                                                <span class="input-group-btn">
+                                                    <button type="button" class="btn btn-fab btn-round btn-info" (click)="getUploadButton()">
+                                                        <i class="material-icons">layers</i>
+                                                    </button>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <button type="button" class="btn btn-primary btn-round" [disabled]="isBtnUploadDisabled" (click)="Upload()"> Upload {{title}}</button>
+                                        <button type="button" class="btn btn-danger btn-round" [disabled]="isBtnCancelDisabled" (click)="Cancel()"> Cancel</button>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="tab-pane" id="holidaysTab">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="form-group form-file-upload form-file-multiple">
+                                            <input type="file" id="holidaysTabMenu" multiple="" class="inputFileHidden" accept=".xlsx" (change)="getFileName($event)">
+                                            <div class="input-group">
+                                                <input type="text" id="holidays" class="form-control inputFileVisible" placeholder="Choose Files" multiple (click)="getUploadText()">
+                                                <span class="input-group-btn">
+                                                    <button type="button" class="btn btn-fab btn-round btn-info" (click)="getUploadButton()">
+                                                        <i class="material-icons">layers</i>
+                                                    </button>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <button type="button" class="btn btn-primary btn-round" [disabled]="isBtnUploadDisabled" (click)="Upload()"> Upload {{title}}</button>
+                                        <button type="button" class="btn btn-danger btn-round" [disabled]="isBtnCancelDisabled" (click)="Cancel()"> Cancel</button>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="tab-pane" id="employeesTab">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="form-group form-file-upload form-file-multiple">
+                                            <input type="file" id="employeesTabMenu" multiple="" class="inputFileHidden" accept=".xlsx" (change)="getFileName($event)">
+                                            <div class="input-group">
+                                                <input type="text" id="employees" class="form-control inputFileVisible" placeholder="Choose Files" multiple (click)="getUploadText()">
+                                                <span class="input-group-btn">
+                                                    <button type="button" class="btn btn-fab btn-round btn-info" (click)="getUploadButton()">
+                                                        <i class="material-icons">layers</i>
+                                                    </button>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <button type="button" class="btn btn-primary btn-round" [disabled]="isBtnUploadDisabled" (click)="Upload()"> Upload {{title}}</button>
+                                        <button type="button" class="btn btn-danger btn-round" [disabled]="isBtnCancelDisabled" (click)="Cancel()"> Cancel</button>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="tab-pane" id="usersTab">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="form-group form-file-upload form-file-multiple">
+                                            <input type="file" id="usersTabMenu" multiple="" class="inputFileHidden" accept=".xlsx" (change)="getFileName($event)">
+                                            <div class="input-group">
+                                                <input type="text" id="users" class="form-control inputFileVisible" placeholder="Choose Files" multiple (click)="getUploadText()">
+                                                <span class="input-group-btn">
+                                                    <button type="button" class="btn btn-fab btn-round btn-info" (click)="getUploadButton()">
+                                                        <i class="material-icons">layers</i>
+                                                    </button>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <button type="button" class="btn btn-primary btn-round" [disabled]="isBtnUploadDisabled" (click)="Upload()"> Upload {{title}}</button>
+                                        <button type="button" class="btn btn-danger btn-round" [disabled]="isBtnCancelDisabled" (click)="Cancel()"> Cancel</button>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+</div>

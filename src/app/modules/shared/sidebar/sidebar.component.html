@@ -1,0 +1,244 @@
+<div class="sidebar" data-color="rose">
+  <div class="logo">
+    <a href="#" class="simple-text logo-normal">
+      TR SYSTEM
+    </a>
+  </div>
+  <div class="sidebar-wrapper">
+    <div class="user">
+      <div class="user-photo">
+        <img src="assets/img/avatar.png" class="img-circle">
+      </div>
+      <div class="user-info">
+       <div class="username">
+          <p> Username : Admin </p>
+       </div>
+       <div class="status">
+        <span> Status : <i class="material-icons">lens</i> Online</span>
+       </div>
+      </div>
+    </div>
+
+    <div class="dropdown-divider"></div>
+
+    <ul class="nav">
+      <li class="nav-item active">
+        <a class="nav-link">
+          <i class="material-icons">menu</i>
+          <p>Main Navigation</p>
+        </a>
+      </li>
+
+      <li class="nav-item active">
+        <a class="nav-link" href="#">
+          <i class="material-icons">dashboard</i>
+          <p>Dashboard</p>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="collapse" href="#fileMaintenance">
+          <i class="material-icons">perm_media</i>
+          <p> File Maintenance
+            <b class="caret"></b>
+          </p>
+
+        </a>
+        <div class="collapse" id="fileMaintenance">
+          <ul class="nav">
+            <li class="nav-item ">
+              <a class="nav-link" [routerLink]="['/companies']">
+                <span class="sidebar-mini"> C </span>
+                <span class="sidebar-normal"> Company </span>
+              </a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" [routerLink]="['/branches']">
+                <span class="sidebar-mini"> B </span>
+                <span class="sidebar-normal"> Branch </span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" [routerLink]="['/departments']">
+                <span class="sidebar-mini"> D </span>
+                <span class="sidebar-normal"> Department </span>
+              </a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" [routerLink]="['/positions']">
+                <span class="sidebar-mini"> P </span>
+                <span class="sidebar-normal"> Position </span>
+              </a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" [routerLink]="['/employmentTypes']">
+                <span class="sidebar-mini"> ET </span>
+                <span class="sidebar-normal"> Employment Type </span>
+              </a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" [routerLink]="['/holidayTypes']">
+                <span class="sidebar-mini"> HT </span>
+                <span class="sidebar-normal"> Holiday Type </span>
+              </a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" [routerLink]="['/holidays']">
+                <span class="sidebar-mini"> H </span>
+                <span class="sidebar-normal"> Holidays</span>
+              </a>
+            </li>
+
+            <li class="nav-item ">
+              <a class="nav-link" [routerLink]="['/employees']">
+                <span class="sidebar-mini"> E </span>
+                <span class="sidebar-normal"> Employee</span>
+              </a>
+            </li>
+
+            <li class="nav-item ">
+              <a class="nav-link" [routerLink]="['/users']">
+                <span class="sidebar-mini"> U </span>
+                <span class="sidebar-normal"> User</span>
+              </a>
+            </li>
+
+            <li class="nav-item ">
+              <a class="nav-link" [routerLink]="['/genders']">
+                <span class="sidebar-mini"> G </span>
+                <span class="sidebar-normal"> Gender</span>
+              </a>
+            </li>
+
+            <li class="nav-item ">
+              <a class="nav-link" [routerLink]="['/shifts']">
+                <span class="sidebar-mini"> S </span>
+                <span class="sidebar-normal"> Shift</span>
+              </a>
+            </li>
+
+
+            <li class="nav-item ">
+              <a class="nav-link" [routerLink]="['/civilStatuses']">
+                <span class="sidebar-mini"> CS </span>
+                <span class="sidebar-normal"> Civil Status</span>
+              </a>
+            </li>
+
+            <li class="nav-item ">
+              <a class="nav-link" [routerLink]="['/accesses']">
+                <span class="sidebar-mini"> A </span>
+                <span class="sidebar-normal"> Access </span>
+              </a>
+            </li>
+
+
+          </ul>
+        </div>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="collapse" href="#dtr" aria-expanded="true">
+          <i class="material-icons">image</i>
+          <p> Daily Time Records
+            <b class="caret"></b>
+          </p>
+        </a>
+        <div class="collapse" id="dtr">
+          <ul class="nav">
+            <li class="nav-item ">
+              <a class="nav-link" [routerLink]="['/computed-dtr-view']">
+                <span class="sidebar-mini"> P </span>
+                <span class="sidebar-normal"> View Computed Daily Time Records </span>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" [routerLink]="['/bio-logs-view']">
+                <span class="sidebar-mini"> P </span>
+                <span class="sidebar-normal"> View Bio Logs </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="collapse" href="#uploader">
+          <i class="material-icons">perm_media</i>
+          <p> Uploader
+            <b class="caret"></b>
+          </p>
+
+        </a>
+        <div class="collapse" id="uploader">
+          <ul class="nav">
+            <li class="nav-item ">
+              <a class="nav-link" [routerLink]="['/uploads']">
+                <span class="sidebar-mini"> U </span>
+                <span class="sidebar-normal"> Uploads </span>
+              </a>
+            </li>
+
+            <li class="nav-item ">
+              <a class="nav-link" [routerLink]="['/upload-companies']">
+                <span class="sidebar-mini"> C </span>
+                <span class="sidebar-normal"> Company </span>
+              </a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" [routerLink]="['/upload-branches']">
+                <span class="sidebar-mini"> B </span>
+                <span class="sidebar-normal"> Branch </span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" [routerLink]="['/upload-departments']">
+                <span class="sidebar-mini"> D </span>
+                <span class="sidebar-normal"> Department </span>
+              </a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" [routerLink]="['/upload-positions']">
+                <span class="sidebar-mini"> P </span>
+                <span class="sidebar-normal"> Position </span>
+              </a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" [routerLink]="['/upload-employmentTypes']">
+                <span class="sidebar-mini"> ET </span>
+                <span class="sidebar-normal"> Employment Type </span>
+              </a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" [routerLink]="['/upload-holidayTypes']">
+                <span class="sidebar-mini"> HT </span>
+                <span class="sidebar-normal"> Holiday Type </span>
+              </a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" [routerLink]="['/upload-holidays']">
+                <span class="sidebar-mini"> H </span>
+                <span class="sidebar-normal"> Holiday</span>
+              </a>
+            </li>
+
+            <li class="nav-item ">
+              <a class="nav-link" [routerLink]="['/upload-employees']">
+                <span class="sidebar-mini"> E </span>
+                <span class="sidebar-normal"> Employee</span>
+              </a>
+            </li>
+
+            <li class="nav-item ">
+              <a class="nav-link" [routerLink]="['/upload-users']">
+                <span class="sidebar-mini"> U </span>
+                <span class="sidebar-normal"> User</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>

@@ -1,1 +1,12 @@
-/* You can add global styles to this file, and also import other style files */
+html, body,a, p{ 
+    margin: 0; 
+    font-family: Roboto, "Roboto", sans-serif; 
+    font-size:14spx;
+}
+.ng-select .ng-select-container{
+    min-height:35px !important;
+}
+
+.ng-select .ng-select-container .ng-value-container .ng-placeholder{
+    margin-top:-3px !important;
+}
